@@ -6,3 +6,12 @@ if (!nome || nome.trim() === "") {
 } else {
     alert(`Bem-vindo, ${nome}!`);
 }
+
+let idade = prompt('Qual é a sua idade?');
+
+// Validação de entrada
+if (!idade || isNaN(idade) || idade <= 0 || !Number.isInteger(Number(idade))) {
+    alert('Por favor, insira uma idade válida (um número inteiro positivo).');
+} else {
+    alert(`Sua idade é ${idade} anos.`);
+}
